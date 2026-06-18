@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Bet - Real to King</title>
+    <style>
+        /* Splash Screen Style */
+        #splash-screen {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        video { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <video id="splash-video" autoplay muted>
+            <source src="YOUR_GOOGLE_DRIVE_VIDEO_LINK_HERE" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main App Content -->
+    <div id="main-app" style="display:none;">
+        <h1>Welcome to King Bet</h1>
+        <!-- මෙතනට තමයි අපි පස්සේ games ටික දාන්නේ -->
+    </div>
+
+    <script>
+        // Splash screen එක ඉවර වුණාම main app එක පෙන්වන script එක
+        const video = document.getElementById('splash-video');
+        video.onended = function() {
+            document.getElementById('splash-screen').style.display = 'none';
+            document.getElementById('main-app').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
