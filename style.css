@@ -1,15 +1,17 @@
+/* King Bet Luxury Theme */
 body {
     margin: 0;
     padding: 0;
     background-color: #050505;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
 }
 
+/* Splash Screen - වීඩියෝව සම්පූර්ණ තිරයේ පෙන්වීමට */
 #splash-screen {
     position: fixed;
     top: 0;
@@ -23,38 +25,31 @@ body {
     z-index: 9999;
 }
 
-video {
+#splash-video {
     width: 100%;
-    max-width: 500px;
+    height: 100%;
+    object-fit: cover; /* වීඩියෝව තිරයට හොඳින් ගැලපේ */
 }
 
+/* Dashboard එක පෙන්වීමට */
 #main-app {
     width: 100%;
     max-width: 500px;
     padding: 20px;
-    display: none;
+    display: none; 
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
-}
-
+.header { text-align: center; padding: 20px; }
 .diamond-balance {
     background: #1a1a1a;
     padding: 15px;
     border-radius: 10px;
-    margin: 20px 0;
     text-align: center;
     border: 1px solid #D4AF37;
+    margin-bottom: 20px;
 }
 
-.game-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
+.game-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 .game-card {
     background: #141414;
     border: 1px solid #333;
@@ -62,7 +57,6 @@ video {
     padding: 15px;
     text-align: center;
 }
-
 .btn-bet {
     background-color: #D4AF37;
     border: none;
@@ -70,4 +64,5 @@ video {
     border-radius: 5px;
     margin-top: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
