@@ -1,0 +1,100 @@
+/* King Bet Luxury Theme */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505; /* Deep Black */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Splash Screen Styling */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5); /* Gold Glow */
+}
+
+/* Dashboard Layout */
+#main-app {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    display: none; /* පසුව පෙන්වීමට */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #D4AF37; /* Gold Line */
+}
+
+.diamond-balance {
+    background: linear-gradient(45deg, #00E5FF, #00838F);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 229, 255, 0.3);
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.game-card {
+    background: #141414;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.game-card:active {
+    transform: scale(0.95);
+    border-color: #D4AF37;
+}
+
+.btn-bet {
+    background-color: #D4AF37;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+### පියවර 3: index.html එක CSS එකට සම්බන්ධ කිරීම
+
+දැන් ඔයා කලින් හදපු `index.html` file එක නැවත Edit කරන්න (පැන්සලක ලකුණ ක්ලික් කරලා). 
+එහි `<head>` ටැග් එක ඇතුළේ පහත පේළිය එකතු කරන්න:
+
+```html
+<link rel="stylesheet" href="style.css">
+
+මෙය කරලා ඉවර වෙලා කියන්න. අපි ඊළඟට **Dashboard එකේ ඇත්තටම පෙනෙන කොටස (HTML Body)** සහ **Games ටික** එකතු කරමු. 
+
+මතක ඇතුව ඔයාගේ Google Drive වීඩියෝ ලින්ක් එක `index.html` එකට දැම්මද කියලා බලන්න!
